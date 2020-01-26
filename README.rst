@@ -154,6 +154,8 @@ By default this role applies the following configuration:
 
    * ssh-askpass
 
+   * tree
+
 * Configures the base software:
 
 ..

@@ -11,6 +11,7 @@ packages:
  - meld
  - retext
  - ssh-askpass
+ - tree
 
 user_skeleton:
  - item_path: https://gitlab.com/constrict0r/home
