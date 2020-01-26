@@ -48,10 +48,6 @@
       path: /home/mary/.emacs.d/init.el
     become: true
 
-  - name: Verify emacs base configuration file created for user mary.
-    file:
-      path: /home/mary/.emacs.d/base.el
-
   - name: Verify emacs theme setted for user mary.
     file:
       path:  /home/mary/.emacs.d/themes/wintermute-theme.el
