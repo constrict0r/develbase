@@ -33,7 +33,7 @@
     include_role:
       name: constrict0r.develbase
     vars:
-      user: mary
+      users: mary
 
   - name: Verify curl package installed.
     file:
