@@ -1,0 +1,16 @@
+---
+
+# Packages to install via apt.
+packages:
+ - https://is.gd/6zWiDK
+ - bats
+ - emacs
+ - git
+ - make
+ - meld
+ - retext
+ - ssh-askpass
+
+user_skeleton:
+ - item_path: https://github.com/constrict0r/home
+   item_expand: false
