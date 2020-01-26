@@ -2,7 +2,8 @@
 
 # Packages to install via apt.
 packages:
- - https://is.gd/6zWiDK
+ # Basik packages.
+ - https://is.gd/zMg68H
  - bats
  - emacs
  - git
@@ -12,5 +13,5 @@ packages:
  - ssh-askpass
 
 user_skeleton:
- - item_path: https://github.com/constrict0r/home
+ - item_path: https://gitlab.com/constrict0r/home
    item_expand: false
