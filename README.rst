@@ -225,15 +225,17 @@ Usage
         vars:
           packages: [leafpad, rolldice]
 
-To run tests:
+* To run tests:
 
-::
+..
 
-   cd develbase
-   chmod +x testme.sh
-   ./testme.sh
+   ::
 
-On some tests you may need to use *sudo* to succeed.
+      cd develbase
+      chmod +x testme.sh
+      ./testme.sh
+
+   On some tests you may need to use *sudo* to succeed.
 
 
 Variables
