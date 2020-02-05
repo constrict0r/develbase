@@ -46,3 +46,4 @@ By default this role applies the following configuration:
 - Configures the base software:
 
  .. include:: parts/configured/base.inc
+
