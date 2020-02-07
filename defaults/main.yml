@@ -11,6 +11,8 @@ packages:
  - meld
  - retext
  - ssh-askpass
+ - texlive-latex-base
+ - texlive-latex-extra
  - tree
 
 user_skeleton:
