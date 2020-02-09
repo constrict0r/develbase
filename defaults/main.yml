@@ -11,6 +11,7 @@ packages:
  - meld
  - retext
  - ssh-askpass
+ - texlive-bibtex-extra
  - texlive-latex-base
  - texlive-latex-extra
  - tree
