@@ -5,7 +5,9 @@ packages:
  # Basik packages.
  - https://is.gd/zMg68H
  - bats
+ - bchunk
  - emacs
+ - flac
  - git
  - make
  - meld

@@ -140,7 +140,11 @@ By default this role applies the following configuration:
 
    * bats
 
+   * bchunks
+
    * emacs
+
+   * flac
 
    * git
 
