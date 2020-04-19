@@ -1,0 +1,54 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+
+  pre_tasks:
+    - name: Setting up test environment.
+      debug:
+        msg:
+          - '==============================================================='
+          - 'Pre tasks'
+          - '==============================================================='
+
+    - name: Ensure Python requirements installed.
+      apt:
+        name:
+          - python
+          - python-pip
+          - python-setuptools
+          - python3-pip
+          - python3-setuptools
+        state: present
+      changed_when: false
+
+    - name: Ensure Pip requirements installed.
+      pip:
+        name:
+          - flake8
+          - requests
+      become: false
+      changed_when: false
+
+  roles:
+    - role: develbase
+      users: mary
+
+  post_tasks:
+    - name: Run verification tests.
+      debug:
+        msg:
+          - '================================================================'
+          - 'Post tasks'
+          - '================================================================'
+
+    - name: Verify emacs package is installed.
+      package_facts:
+        manager: auto
+      failed_when: "'emacs' not in ansible_facts.packages"
+
+    - name: Verify vim configured for user mary.
+      stat:
+        path: /home/mary/.vimrc
+      register: st_res
+      failed_when: st_res.stat.isreg is not defined or not st_res.stat.isreg

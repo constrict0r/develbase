@@ -1,5 +1,5 @@
 Description
-------------------------------------------------------------------------------
+--------------------------------------------------------------
 
 Ansible role to apply basic developer configuration.
 
@@ -37,14 +37,12 @@ By default this role applies the following configuration:
 
 - Installs the base software:
 
- .. include:: parts/packages/base.inc
+ .. include:: part/package/base.inc
 
 - Installs the base developer software:
 
- .. include:: parts/packages/dev_base.inc
+ .. include:: part/package/dev_base.inc
 
 - Configures the base software:
 
- .. include:: parts/configured/base.inc
-
-
+ .. include:: part/configured/base.inc
